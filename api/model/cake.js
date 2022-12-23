@@ -30,6 +30,14 @@ const Cake = mongoose.model(
       type: Number,
       required: true,
     },
+    model: [{
+      type: mongoose.Schema.ObjectId,
+      ref: "model"
+    }],
+    filling: [{
+      type: mongoose.Schema.ObjectId,
+      ref: "filling"
+    }]
   })
 );
 
