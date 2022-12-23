@@ -14,6 +14,10 @@ const Cake = mongoose.model(
       type: String,
       required: true,
     },
+    default:{
+      type: Boolean,
+      default: false
+    },
     image: [
       {
         type: String,
