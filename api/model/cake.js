@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export default cake = mongoose.model(
+const Cake = mongoose.model(
   "cake",
   mongoose.Schema({
     name: {
@@ -32,3 +32,5 @@ export default cake = mongoose.model(
     },
   })
 );
+
+export default Cake

@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export default filling = mongoose.model(
+const Filling = mongoose.model(
   "filling",
   mongoose.Schema({
     name: {
@@ -18,3 +18,5 @@ export default filling = mongoose.model(
     ],
   })
 );
+
+export default Filling

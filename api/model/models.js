@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export default model = mongoose.model(
+const Model = mongoose.model(
   "model",
   mongoose.Schema({
     name: {
@@ -18,3 +18,5 @@ export default model = mongoose.model(
     ],
   })
 );
+
+export default Model
