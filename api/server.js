@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import Routes from "./routes";
+import Routes from "./routes/index.js";
 dotenv.config();
 
 const { PORT, DB_USER, DB_PASSWORD, DB_NAME } = process.env;
