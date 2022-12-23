@@ -8,8 +8,7 @@ const Cake = mongoose.model(
       required: true,
     },
     price: {
-      type: Number,
-      required: true,
+      type: Number
     },
     description: {
       type: String,
@@ -37,6 +36,10 @@ const Cake = mongoose.model(
     filling: [{
       type: mongoose.Schema.ObjectId,
       ref: "filling"
+    }],
+    topping: [{
+      type: mongoose.Schema.ObjectId,
+      ref: "topping"
     }]
   })
 );

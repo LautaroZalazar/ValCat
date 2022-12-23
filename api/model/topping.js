@@ -1,15 +1,15 @@
 import mongoose from "mongoose";
 
-const Model = mongoose.model(
-  "model",
+const Topping = mongoose.model(
+  "topping",
   mongoose.Schema({
     name: {
       type: String,
       required: true,
     },
     price: {
-      type: Number,
-      required: true,
+        type: Number,
+        required: true
     },
     description: {
       type: String,
@@ -23,4 +23,4 @@ const Model = mongoose.model(
   })
 );
 
-export default Model;
+export default Topping
