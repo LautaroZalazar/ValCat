@@ -13,6 +13,6 @@ export const getCakeById = async (req, res) => {
       res.status(404).send("Cakes doesn't exist");
     }
   } catch (error) {
-    res.send("Error: ", error.message);
+    res.status(404).send("Error: ", error.message);
   }
 };

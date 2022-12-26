@@ -27,6 +27,6 @@ export const getAllCakes = async (req, res) => {
       }
     }
   } catch (error) {
-    res.send("Error: ", error.message);
+    res.status(404).send("Error: ", error.message);
   }
 };
